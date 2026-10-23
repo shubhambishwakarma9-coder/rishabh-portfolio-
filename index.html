@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishabh — Web Developer & Software Craftsman</title>
+  <meta name="description" content="Portfolio of Rishabh, Web Developer crafting high-performance, bespoke digital platforms, creative web applications, and architectural frontends." />
+  <meta name="author" content="Rishabh" />
+  <meta property="og:title" content="Rishabh — Crafted Websites, Lasting Impressions" />
+  <meta property="og:description" content="Web Developer crafting pixel-perfect, high-performance digital experiences." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Instrument Serif, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <!-- Atmospheric Glow Effect -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="header-inner container">
+      <!-- Logo Mark -->
+      <a href="#hero" class="brand-logo" aria-label="Rishabh Home">
+        <svg class="brand-symbol" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 4L14 24L24 4H18.5L14 15.5L9.5 4H4Z" fill="currentColor"/>
+          <path d="M14 17L16.8 23H11.2L14 17Z" fill="#0066cc"/>
+        </svg>
+        <span class="brand-name">Rishabh</span>
+      </a>
+
+      <!-- Center Links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#studio" class="nav-link">Studio</a>
+        <a href="#works" class="nav-link">Works</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#stack" class="nav-link">Stack</a>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="header-actions">
+        <!-- Minimal Ambient Viewport Toggle -->
+        <button class="ambient-toggle" id="ambientToggle" title="Toggle Studio Ambient Glow" aria-label="Toggle Glow">
+          <span class="toggle-track">
+            <span class="toggle-thumb"></span>
+          </span>
+        </button>
+
+        <!-- CTA Pill Button -->
+        <a href="#contact" class="btn-pill btn-white" id="navContactBtn">Let's Connect</a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Open Navigation Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container container">
+        <!-- Top Pill Badge -->
+        <div class="pill-badge" id="heroBadge">
+          <span class="badge-dot"></span>
+          <span class="badge-text">Design In Details</span>
+        </div>
+
+        <!-- Typography Heading matching reference image -->
+        <h1 class="hero-heading">
+          <span class="heading-line line-1">
+            <span class="sans-heavy">Crafted</span>
+            <span class="serif-italic">Websites</span>
+          </span>
+          <span class="heading-line line-2">
+            <span class="serif-italic">Lasting</span>
+            <span class="sans-heavy">Impressions</span>
+          </span>
+        </h1>
+
+        <!-- Subheading -->
+        <p class="hero-subtext">
+          Premium websites crafted for bold brands. Engineered by Rishabh with clean architecture, fluid interaction, and uncompromising performance.
+        </p>
+
+        <!-- Hero Actions -->
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn-pill btn-white">Get in touch</a>
+          <a href="#works" class="btn-pill btn-outline">See our work</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO WORKSPACE CANVAS (The core centerpiece from the reference image) -->
+    <section class="studio-section" id="studio">
+      <div class="studio-wrapper container">
+        <!-- Atmospheric blue glow backing -->
+        <div class="studio-glow-halo" aria-hidden="true"></div>
+
+        <!-- The Studio IDE Shell -->
+        <div class="studio-ide-window" id="studioWindow">
+          
+          <!-- TOP TOOLBAR -->
+          <div class="ide-topbar">
+            <!-- Left: Brand Breadcrumb -->
+            <div class="ide-breadcrumb">
+              <div class="ide-logo-badge">
+                <svg viewBox="0 0 20 20" width="14" height="14" fill="none">
+                  <path d="M3 3L10 17L17 3H13L10 11L7 3H3Z" fill="#ffffff"/>
+                </svg>
+              </div>
+              <span class="ide-chevron">&gt;</span>
+              <span class="ide-filename" id="currentProjectBreadcrumb">aktiv-fitness.vercel.app</span>
+              <a href="https://aktiv-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" class="ide-external-link" id="currentProjectExternalLink" title="Open live production website in new tab">
+                <span>Live Site</span>
+                <svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor">
+                  <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Center: Viewport Switcher -->
+            <div class="ide-viewport-controls">
+              <button class="viewport-btn active" id="viewDesktopBtn" title="Desktop View (1586px)" aria-label="Desktop View">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+              </button>
+              <button class="viewport-btn" id="viewMobileBtn" title="Mobile View (390px)" aria-label="Mobile View">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="6" y="2" width="12" height="20" rx="2" />
+                  <line x1="11" y1="18" x2="13" y2="18" />
+                </svg>
+              </button>
+              <div class="ide-viewport-pill">
+                <span class="dimension-label">w</span>
+                <span class="dimension-val" id="viewportWidthLabel">1586px</span>
+                <span class="dimension-divider">|</span>
+                <span class="zoom-label">Q</span>
+                <span class="zoom-val" id="viewportZoomLabel">100%</span>
+              </div>
+            </div>
+
+            <!-- Right: Multiplayer Presence & Actions -->
+            <div class="ide-presence">
+              <div class="collaborator-avatars">
+                <div class="avatar-circle devansh" title="Devansh — Creative Director">
+                  <img src="assets/images/rishabh-avatar.jpg" alt="Devansh" />
+                  <span class="presence-dot online"></span>
+                </div>
+                <div class="avatar-circle rishabh" title="Rishabh — Lead Web Developer">
+                  <img src="assets/images/rishabh-avatar.jpg" alt="Rishabh" />
+                  <span class="presence-dot online"></span>
+                </div>
+              </div>
+              <button class="ide-btn-share" id="canvasProjectToggle" title="Next Live Preview">
+                <span>Switch Project</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- MAIN IDE BODY: 3-COLUMN STUDIO LAYOUT -->
+          <div class="ide-main-grid">
+            
+            <!-- LEFT SIDEBAR: Layers & Hierarchy Tree -->
+            <aside class="ide-sidebar ide-left-panel">
+              <!-- Tabs -->
+              <div class="panel-tabs">
+                <button class="panel-tab" data-tab="pages">Pages</button>
+                <button class="panel-tab active" data-tab="layers">Layers</button>
+                <button class="panel-tab" data-tab="assets">Assets</button>
+              </div>
+
+              <!-- Tree Hierarchy -->
+              <div class="layers-tree">
+                <!-- Root Level -->
+                <div class="tree-node root-node">
+                  <div class="node-content">
+                    <svg class="tree-caret" viewBox="0 0 16 16" width="10" height="10" fill="currentColor">
+                      <path d="M4 6L8 10L12 6H4Z" />
+                    </svg>
+                    <svg class="node-icon" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                      <path d="M2 6L8 2L14 6V13C14 13.5 13.5 14 13 14H3C2.5 14 2 13.5 2 13V6Z" stroke-width="1.5"/>
+                    </svg>
+                    <span class="node-label">Home</span>
+                  </div>
+                </div>
+
+                <!-- Layer Items (Hero is active in screenshot) -->
+                <div class="tree-children">
+                  <div class="tree-node layer-item active" data-layer="hero">
+                    <div class="node-content">
+                      <svg class="tree-chevron" viewBox="0 0 16 16" width="8" height="8" fill="currentColor">
+                        <path d="M6 4L10 8L6 12V4Z"/>
+                      </svg>
+                      <svg class="layer-type-icon" viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
+                        <path d="M8 1L1 5L8 9L15 5L8 1Z"/>
+                        <path d="M1 8L8 12L15 8" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                      </svg>
+                      <span class="node-label">Hero</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node layer-item" data-layer="tech-stack">
+                    <div class="node-content">
+                      <svg class="tree-chevron" viewBox="0 0 16 16" width="8" height="8" fill="currentColor">
+                        <path d="M6 4L10 8L6 12V4Z"/>
+                      </svg>
+                      <svg class="layer-type-icon" viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
+                        <path d="M8 1L1 5L8 9L15 5L8 1Z"/>
+                      </svg>
+                      <span class="node-label">Tech Stack</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node layer-item" data-layer="intro">
+                    <div class="node-content">
+                      <svg class="tree-chevron" viewBox="0 0 16 16" width="8" height="8" fill="currentColor">
+                        <path d="M6 4L10 8L6 12V4Z"/>
+                      </svg>
+                      <svg class="layer-type-icon" viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
+                        <path d="M8 1L1 5L8 9L15 5L8 1Z"/>
+                      </svg>
+                      <span class="node-label">Introduction</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node layer-item" data-layer="featured-works">
+                    <div class="node-content">
+                      <svg class="tree-chevron" viewBox="0 0 16 16" width="8" height="8" fill="currentColor">
+                        <path d="M6 4L10 8L6 12V4Z"/>
+                      </svg>
+                      <svg class="layer-type-icon" viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
+                        <path d="M8 1L1 5L8 9L15 5L8 1Z"/>
+                      </svg>
+                      <span class="node-label">Featured Works</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node layer-item" data-layer="services">
+                    <div class="node-content">
+                      <svg class="tree-chevron" viewBox="0 0 16 16" width="8" height="8" fill="currentColor">
+                        <path d="M6 4L10 8L6 12V4Z"/>
+                      </svg>
+                      <svg class="layer-type-icon" viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
+                        <path d="M8 1L1 5L8 9L15 5L8 1Z"/>
+                      </svg>
+                      <span class="node-label">Services</span>
+                    </div>
+                  </div>
+
+                  <div class="tree-node layer-item" data-layer="approach">
+                    <div class="node-content">
+                      <svg class="tree-chevron" viewBox="0 0 16 16" width="8" height="8" fill="currentColor">
+                        <path d="M6 4L10 8L6 12V4Z"/>
+                      </svg>
+                      <svg class="layer-type-icon" viewBox="0 0 16 16" width="12" height="12" fill="currentColor">
+                        <path d="M8 1L1 5L8 9L15 5L8 1Z"/>
+                      </svg>
+                      <span class="node-label">Approach</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Stats in Sidebar -->
+              <div class="sidebar-footer-stat">
+                <div class="stat-dot-pulse"></div>
+                <span>Sync: Localhost &bull; 60 FPS</span>
+              </div>
+            </aside>
+
+            <!-- CENTER: Live Interactive Artboard / Viewport Canvas -->
+            <div class="ide-canvas-stage" id="canvasStage">
+              <!-- Artboard Container -->
+              <div class="artboard-frame" id="artboardFrame">
+                
+                <!-- Floating Multiplayer Cursor (Devansh from screenshot) -->
+                <div class="multiplayer-cursor devansh-cursor" id="devanshCursor">
+                  <svg class="cursor-pointer" viewBox="0 0 16 16" width="14" height="14" fill="#ff7043">
+                    <polygon points="0,0 0,14 4,10 8,14 10,12 6,8 12,8" />
+                  </svg>
+                  <span class="cursor-tag">Devansh</span>
+                </div>
+
+                <!-- Floating Multiplayer Cursor (Rishabh) -->
+                <div class="multiplayer-cursor rishabh-cursor" id="rishabhCursor">
+                  <svg class="cursor-pointer" viewBox="0 0 16 16" width="14" height="14" fill="#0066cc">
+                    <polygon points="0,0 0,14 4,10 8,14 10,12 6,8 12,8" />
+                  </svg>
+                  <span class="cursor-tag">Rishabh (Building)</span>
+                </div>
+
+                <!-- Project Preview Content (Matches the exact Tigers culinary website in the screenshot) -->
+                <div class="canvas-web-preview" id="canvasWebPreview">
+                  <div class="preview-hero-content">
+                    <div class="project-artboard-image-wrap">
+                      <img src="assets/images/project-aktiv.jpg" alt="Aktiv Fitness — Delhi's Highest-Rated Gym" class="artboard-img" id="artboardMainImage" />
+                      
+                      <!-- Overlay Highlights when interacting with layers -->
+                      <div class="artboard-highlight-box" id="layerHighlightBox" style="top: 16%; left: 8%; width: 84%; height: 68%;">
+                        <span class="box-handle top-left"></span>
+                        <span class="box-handle top-right"></span>
+                        <span class="box-handle bottom-left"></span>
+                        <span class="box-handle bottom-right"></span>
+                        <span class="box-dimension-tag" id="boxDimensionTag">FitnessHero &bull; 1380 &times; 760</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- RIGHT SIDEBAR: Studio Property Inspector (Exact replica from screenshot) -->
+            <aside class="ide-sidebar ide-right-panel">
+              <!-- Toolbar Top Icons -->
+              <div class="inspector-toolbar">
+                <button class="tool-icon-btn" title="Align Left">
+                  <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                    <line x1="2" y1="2" x2="2" y2="14" stroke-width="2"/>
+                    <rect x="5" y="4" width="8" height="3" fill="currentColor"/>
+                    <rect x="5" y="9" width="5" height="3" fill="currentColor"/>
+                  </svg>
+                </button>
+                <button class="tool-icon-btn" title="Align Center">
+                  <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                    <line x1="8" y1="2" x2="8" y2="14" stroke-width="1.5"/>
+                    <rect x="4" y="4" width="8" height="3" fill="currentColor"/>
+                    <rect x="5.5" y="9" width="5" height="3" fill="currentColor"/>
+                  </svg>
+                </button>
+                <button class="tool-icon-btn" title="Align Right">
+                  <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                    <line x1="14" y1="2" x2="14" y2="14" stroke-width="2"/>
+                    <rect x="3" y="4" width="8" height="3" fill="currentColor"/>
+                    <rect x="6" y="9" width="5" height="3" fill="currentColor"/>
+                  </svg>
+                </button>
+                <button class="tool-icon-btn" title="Align Top">
+                  <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                    <line x1="2" y1="2" x2="14" y2="2" stroke-width="2"/>
+                    <rect x="4" y="5" width="3" height="8" fill="currentColor"/>
+                    <rect x="9" y="5" width="3" height="5" fill="currentColor"/>
+                  </svg>
+                </button>
+                <button class="tool-icon-btn" title="Distribute">
+                  <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                    <line x1="2" y1="8" x2="14" y2="8" stroke-width="1"/>
+                    <rect x="3" y="3" width="10" height="2" fill="currentColor"/>
+                    <rect x="3" y="11" width="10" height="2" fill="currentColor"/>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Inspector Property Groups -->
+              <div class="inspector-body">
+                <!-- Group: Position -->
+                <div class="property-group">
+                  <div class="group-header">
+                    <span class="group-title">Position</span>
+                  </div>
+                  <div class="prop-row">
+                    <label class="prop-label">Type</label>
+                    <div class="prop-input-wrap">
+                      <select class="prop-select" id="propPositionType">
+                        <option value="Relative" selected>Relative</option>
+                        <option value="Absolute">Absolute</option>
+                        <option value="Fixed">Fixed</option>
+                        <option value="Sticky">Sticky</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Group: Size -->
+                <div class="property-group">
+                  <div class="group-header">
+                    <span class="group-title">Size</span>
+                    <span class="group-action-add">+</span>
+                  </div>
+                  
+                  <div class="prop-row">
+                    <label class="prop-label">Width</label>
+                    <div class="prop-dual-input">
+                      <input type="text" class="prop-input-mini" id="propWidthVal" value="1fr" />
+                      <span class="prop-mode-pill" id="propWidthMode">Fill</span>
+                    </div>
+                  </div>
+
+                  <div class="prop-row">
+                    <label class="prop-label">Height</label>
+                    <div class="prop-dual-input">
+                      <input type="text" class="prop-input-mini" id="propHeightVal" value="Auto" />
+                      <span class="prop-mode-pill" id="propHeightMode">Fit</span>
+                    </div>
+                  </div>
+
+                  <div class="prop-row">
+                    <label class="prop-label">Max Width</label>
+                    <div class="prop-dual-input">
+                      <input type="text" class="prop-input-mini" id="propMaxWidthVal" value="1200" />
+                      <span class="prop-mode-pill" id="propMaxWidthMode">Fixed</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Group: Layout / Flex -->
+                <div class="property-group">
+                  <div class="group-header">
+                    <span class="group-title">Layout</span>
+                  </div>
+                  <div class="prop-row">
+                    <label class="prop-label">Display</label>
+                    <div class="prop-input-wrap">
+                      <span class="prop-badge">CSS Grid / Flex</span>
+                    </div>
+                  </div>
+                  <div class="prop-row">
+                    <label class="prop-label">Gap</label>
+                    <div class="prop-dual-input">
+                      <input type="text" class="prop-input-mini" value="32px" readonly />
+                      <span class="prop-mode-pill">px</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Group: Typography Tokens -->
+                <div class="property-group">
+                  <div class="group-header">
+                    <span class="group-title">Typography</span>
+                  </div>
+                  <div class="token-display">
+                    <div class="token-item">
+                      <span class="token-name">Display Sans</span>
+                      <span class="token-val">Plus Jakarta Sans 800</span>
+                    </div>
+                    <div class="token-item">
+                      <span class="token-name">Editorial Serif</span>
+                      <span class="token-val">Instrument Serif 400 Italic</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Live CSS Inspector snippet -->
+                <div class="property-group live-css-box">
+                  <div class="group-header">
+                    <span class="group-title">Live CSS Rule</span>
+                    <button class="copy-css-btn" id="copyCssBtn" title="Copy CSS">Copy</button>
+                  </div>
+                  <pre class="css-code-snippet"><code>.hero-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 7vw, 6rem);
+  letter-spacing: 0.04em;
+  background: linear-gradient(135deg, #ff6b2b, #ff2d55);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-tag {
+  color: #ff6b2b;
+  font-weight: 700;
+  letter-spacing: 2px;
+}</code></pre>
+                </div>
+
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT RISHABH & CRAFT PHILOSOPHY -->
+    <section class="about-section" id="about">
+      <div class="about-container container">
+        <div class="section-badge">
+          <span class="badge-dot"></span>
+          <span>About Rishabh</span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-column">
+            <h2 class="section-title">
+              Engineering with <span class="serif-italic">architectural clarity</span> & uncompromised speed.
+            </h2>
+            <p class="about-lead">
+              I am Rishabh, a Full-Stack Web Developer specialized in crafting bespoke digital flagships, high-throughput cloud interfaces, and interactive web experiences.
+            </p>
+            <p class="about-text">
+              I reject generic templates, slow bloated runtimes, and low-effort AI slop. Every line of markup, stylesheet rule, and server endpoint is handwritten with deliberate intent — optimizing for sub-100ms render speeds, pristine accessibility, and fluid 60fps micro-interactions.
+            </p>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span class="highlight-text">Zero reliance on heavy CSS bloat — pure, hand-architected responsive systems</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span class="highlight-text">Production-hardened Next.js, TypeScript, React 19, and Node.js backends</span>
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">&check;</span>
+                <span class="highlight-text">Lighthouse 98+ score commitment on performance, SEO & best practices</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Profile Card -->
+          <div class="about-card-column">
+            <div class="profile-card">
+              <div class="profile-img-wrap">
+                <img src="assets/images/rishabh-avatar.jpg" alt="Rishabh — Web Developer" class="profile-photo" />
+                <div class="profile-status-badge">
+                  <span class="status-indicator"></span>
+                  <span>Available for Q4 / 2026 Projects</span>
+                </div>
+              </div>
+              <div class="profile-info">
+                <div class="profile-role">Web Developer & Frontend Engineer</div>
+                <div class="profile-location">
+                  <svg viewBox="0 0 16 16" width="13" height="13" fill="currentColor">
+                    <path d="M8 1C5.2 1 3 3.2 3 6C3 10 8 15 8 15C8 15 13 10 13 6C13 3.2 10.8 1 8 1ZM8 8C6.9 8 6 7.1 6 6C6 4.9 6.9 4 8 4C9.1 4 10 4.9 10 6C10 7.1 9.1 8 8 8Z"/>
+                  </svg>
+                  <span>New Delhi, India &bull; Working Worldwide</span>
+                </div>
+                <div class="profile-stats-row">
+                  <div class="profile-stat">
+                    <span class="stat-number">05+</span>
+                    <span class="stat-desc">Years Craft</span>
+                  </div>
+                  <div class="profile-stat">
+                    <span class="stat-number">40+</span>
+                    <span class="stat-desc">Websites Shipped</span>
+                  </div>
+                  <div class="profile-stat">
+                    <span class="stat-number">99.8%</span>
+                    <span class="stat-desc">Avg Performance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORKS / PROJECTS -->
+    <section class="works-section" id="works">
+      <div class="works-container container">
+        <div class="section-header-row">
+          <div>
+            <div class="section-badge">
+              <span class="badge-dot"></span>
+              <span>Featured Portfolio</span>
+            </div>
+            <h2 class="section-title">
+              Recent <span class="serif-italic">Handcrafted</span> Works
+            </h2>
+          </div>
+          <p class="section-subtitle-right">
+            Selected client projects engineered with bespoke frontend engines, sub-second latency, and award-winning aesthetic standards.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- PROJECT 01: Aktiv Fitness (Live Website Requested by User) -->
+          <article class="project-card" data-project-id="aktiv">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-aktiv.jpg" alt="Aktiv Fitness — Commercial Gym Web Platform" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-overlay-actions">
+                  <button class="btn-preview-modal" data-modal="modal-aktiv">View Details</button>
+                  <a href="https://aktiv-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-preview-live">
+                    <span>Live Site</span>
+                    <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor">
+                      <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tag-pill" style="border-color: rgba(255, 107, 43, 0.45); color: #ff854d;">Live Client Flagship</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-year" style="color: #ff6b2b;">2026</span>
+                <span class="project-divider">&bull;</span>
+                <span class="project-category">Commercial Platform / Fitness &amp; Wellness</span>
+              </div>
+              <h3 class="project-title">Aktiv Fitness &mdash; Delhi's Highest-Rated Gym</h3>
+              <p class="project-desc">
+                High-performance digital flagship for premier Karol Bagh fitness center. Engineered with high-contrast Bebas Neue typography, 4.9★ Google review engine, dynamic operating schedule matrix, and frictionless instant trial booking conversions.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag" style="border-color: rgba(255, 107, 43, 0.35); color: #ff854d; font-weight: 600;">Live on Vercel</span>
+                <span class="tech-tag">Vanilla CSS</span>
+                <span class="tech-tag">JavaScript ES6+</span>
+                <span class="tech-tag">4.9★ Google Score</span>
+                <span class="tech-tag">Local SEO Schema</span>
+                <span class="tech-tag">Sub-100ms LCP</span>
+              </div>
+              <div class="project-links-row">
+                <div class="project-left-links">
+                  <button class="text-link-btn" data-modal="modal-aktiv">
+                    <span>Explore Case Study</span>
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke-width="1.8"/>
+                    </svg>
+                  </button>
+                  <a href="https://aktiv-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-live-pill" title="Open live production website">
+                    <span>Live Site</span>
+                    <svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor">
+                      <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                    </svg>
+                  </a>
+                </div>
+                <button class="btn-canvas-load" data-load-project="aktiv" title="Load into Studio Canvas above">
+                  Studio Live View &uarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: Jayna Dental World (Live Client Flagship in Connaught Place) -->
+          <article class="project-card" data-project-id="jayna">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-jayna.jpg" alt="Jayna Dental World — Connaught Place Heritage Clinic" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-overlay-actions">
+                  <button class="btn-preview-modal" data-modal="modal-jayna">View Details</button>
+                  <a href="projects/jayna-dental/index.html" target="_blank" rel="noopener noreferrer" class="btn-preview-live">
+                    <span>Live Site</span>
+                    <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor">
+                      <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tag-pill" style="border-color: rgba(0, 229, 190, 0.45); color: #00e5be;">Live Client Flagship</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-year" style="color: #00e5be;">2026</span>
+                <span class="project-divider">&bull;</span>
+                <span class="project-category">Healthcare / Multi-Speciality Dental &amp; Orthodontics</span>
+              </div>
+              <h3 class="project-title">Jayna Dental World &mdash; Connaught Place Heritage Practice</h3>
+              <p class="project-desc">
+                High-end medical web flagship for Central Delhi’s historic dental destination (Est. 1910). Handcrafted with deep sapphire luxury aesthetic, 4.9★ Google review engine, interactive treatment selector, 3D before/after smile preview, and zero-wait appointment booking.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag" style="border-color: rgba(0, 229, 190, 0.35); color: #00e5be; font-weight: 600;">Live Production</span>
+                <span class="tech-tag">Connaught Place, New Delhi</span>
+                <span class="tech-tag">4.9★ Google Score</span>
+                <span class="tech-tag">115-Year Heritage</span>
+                <span class="tech-tag">Local SEO Schema</span>
+                <span class="tech-tag">Sub-70ms TTFB</span>
+              </div>
+              <div class="project-links-row">
+                <div class="project-left-links">
+                  <button class="text-link-btn" data-modal="modal-jayna">
+                    <span>Explore Case Study</span>
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke-width="1.8"/>
+                    </svg>
+                  </button>
+                  <a href="projects/jayna-dental/index.html" target="_blank" rel="noopener noreferrer" class="btn-live-pill pill-cyan" title="Open live production website">
+                    <span>Live Site</span>
+                    <svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor">
+                      <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                    </svg>
+                  </a>
+                  <a href="https://maps.app.goo.gl/6FN9MGEspZS1TWgF9?g_st=ac" target="_blank" rel="noopener noreferrer" class="btn-live-pill pill-gold" title="View Google Maps Location">
+                    <span>Google Maps</span>
+                    <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor">
+                      <path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                    </svg>
+                  </a>
+                </div>
+                <button class="btn-canvas-load" data-load-project="jayna" title="Load into Studio Canvas above">
+                  Studio Live View &uarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Chawla Dental Clinic & Surgical Center (Janakpuri) -->
+          <article class="project-card" data-project-id="chawla">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-chawla.jpg" alt="Chawla Dental Clinic & Surgical Center Janakpuri" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-overlay-actions">
+                  <button class="btn-preview-modal" data-modal="modal-chawla">View Details</button>
+                  <a href="projects/chawla-dental/index.html" target="_blank" rel="noopener noreferrer" class="btn-preview-live">
+                    <span>Live Site</span>
+                    <svg viewBox="0 0 16 16" width="11" height="11" fill="none" stroke="currentColor">
+                      <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-tag-pill" style="border-color: rgba(0, 210, 196, 0.45); color: #00d2c4;">Live Client Flagship</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-year" style="color: #00d2c4;">2026</span>
+                <span class="project-divider">&bull;</span>
+                <span class="project-category">Oral &amp; Maxillofacial Surgery / Advanced Implantology</span>
+              </div>
+              <h3 class="project-title">Chawla Dental &mdash; Oral Surgery &amp; Implant Center</h3>
+              <p class="project-desc">
+                High-precision surgical healthcare platform for Dr. Ramandeep Singh Chawla (BDS, MDS). Engineered for Janakpuri center with 5.0★ Google verified proof, painless 15-minute wisdom tooth protocol, in-house digital OPG radiology, and sterile hospital-grade protocols.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag" style="border-color: rgba(0, 210, 196, 0.35); color: #00d2c4; font-weight: 600;">Live Production</span>
+                <span class="tech-tag">Janakpuri, New Delhi</span>
+                <span class="tech-tag">5.0★ Google Score</span>
+                <span class="tech-tag">MDS Oral Surgery</span>
+                <span class="tech-tag">Digital OPG</span>
+                <span class="tech-tag">Sub-75ms LCP</span>
+              </div>
+              <div class="project-links-row">
+                <div class="project-left-links">
+                  <button class="text-link-btn" data-modal="modal-chawla">
+                    <span>Explore Case Study</span>
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke-width="1.8"/>
+                    </svg>
+                  </button>
+                  <a href="projects/chawla-dental/index.html" target="_blank" rel="noopener noreferrer" class="btn-live-pill pill-teal" title="Open live production website">
+                    <span>Live Site</span>
+                    <svg viewBox="0 0 16 16" width="10" height="10" fill="none" stroke="currentColor">
+                      <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                    </svg>
+                  </a>
+                  <a href="https://maps.app.goo.gl/DpQEvfpkyavZTrdm9" target="_blank" rel="noopener noreferrer" class="btn-live-pill pill-teal" title="View Google Maps Location">
+                    <span>Google Maps</span>
+                    <svg viewBox="0 0 16 16" width="10" height="10" fill="currentColor">
+                      <path d="M8 0a5 5 0 0 0-5 5c0 3.75 5 11 5 11s5-7.25 5-11a5 5 0 0 0-5-5zm0 7.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+                    </svg>
+                  </a>
+                </div>
+                <button class="btn-canvas-load" data-load-project="chawla" title="Load into Studio Canvas above">
+                  Studio Live View &uarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: Tigre Tigre -->
+          <article class="project-card" data-project-id="tigre">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-tigre.jpg" alt="Tigre Tigre Sake & Food Web Platform" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-overlay-actions">
+                  <button class="btn-preview-modal" data-modal="modal-tigre">View Architecture &amp; Details</button>
+                </div>
+              </div>
+              <div class="project-tag-pill">Client Flagship</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-year">2026</span>
+                <span class="project-divider">&bull;</span>
+                <span class="project-category">Full-Stack / Editorial Hospitality</span>
+              </div>
+              <h3 class="project-title">Tigre Tigre &mdash; After-Office Sake &amp; Food</h3>
+              <p class="project-desc">
+                High-contrast editorial web presence for a premier Tokyo sake bar. Built with bespoke vanilla CSS grids, micro-interactions, responsive reservation engine, and headless menu synchronization.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js 15</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Vanilla CSS</span>
+                <span class="tech-tag">Headless CMS</span>
+                <span class="tech-tag">Sub-80ms LCP</span>
+              </div>
+              <div class="project-links-row">
+                <div class="project-left-links">
+                  <button class="text-link-btn" data-modal="modal-tigre">
+                    <span>Explore Case Study</span>
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke-width="1.8"/>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn-canvas-load" data-load-project="tigre" title="Load into Studio Canvas above">
+                  Studio Live View &uarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: Nexus Aether Ops -->
+          <article class="project-card" data-project-id="nexus">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-nexus.jpg" alt="Nexus Aether Cloud Infrastructure Dashboard" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-overlay-actions">
+                  <button class="btn-preview-modal" data-modal="modal-nexus">View Architecture &amp; Details</button>
+                </div>
+              </div>
+              <div class="project-tag-pill">Cloud Telemetry</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-year">2026</span>
+                <span class="project-divider">&bull;</span>
+                <span class="project-category">Cloud Web App / Real-Time Systems</span>
+              </div>
+              <h3 class="project-title">Nexus Aether &mdash; High-Concurrency Cloud Telemetry</h3>
+              <p class="project-desc">
+                Real-time developer observability web application handling 45.2k req/min live telemetry streams. Zero-lag SVG canvas rendering, custom dark mode design system, and multi-region cluster health monitor.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Node.js / Express</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Chart Engine</span>
+              </div>
+              <div class="project-links-row">
+                <div class="project-left-links">
+                  <button class="text-link-btn" data-modal="modal-nexus">
+                    <span>Explore Case Study</span>
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke-width="1.8"/>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn-canvas-load" data-load-project="nexus" title="Load into Studio Canvas above">
+                  Studio Live View &uarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04: Elements Studio -->
+          <article class="project-card" data-project-id="elements">
+            <div class="project-media-wrap">
+              <img src="assets/images/project-elements.jpg" alt="Elements Architecture Collective Portfolio" class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-overlay-actions">
+                  <button class="btn-preview-modal" data-modal="modal-elements">View Architecture &amp; Details</button>
+                </div>
+              </div>
+              <div class="project-tag-pill">Avant-Garde Studio</div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-year">2025</span>
+                <span class="project-divider">&bull;</span>
+                <span class="project-category">Creative Engineering / Architecture</span>
+              </div>
+              <h3 class="project-title">Elements Collective &mdash; Architectural Identity</h3>
+              <p class="project-desc">
+                High-end design studio portfolio combining brutalist typography with smooth kinetic physics. Hand-tuned WebGL image displacement effects, sub-second route caching, and 100/100 Lighthouse benchmark.
+              </p>
+              <div class="project-tech-tags">
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">WebGL / Canvas</span>
+                <span class="tech-tag">Smooth Inertia</span>
+                <span class="tech-tag">100 Lighthouse</span>
+              </div>
+              <div class="project-links-row">
+                <div class="project-left-links">
+                  <button class="text-link-btn" data-modal="modal-elements">
+                    <span>Explore Case Study</span>
+                    <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke-width="1.8"/>
+                    </svg>
+                  </button>
+                </div>
+                <button class="btn-canvas-load" data-load-project="elements" title="Load into Studio Canvas above">
+                  Studio Live View &uarr;
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL STACK & CAPABILITIES -->
+    <section class="stack-section" id="stack">
+      <div class="stack-container container">
+        <div class="section-badge">
+          <span class="badge-dot"></span>
+          <span>Technical Stack</span>
+        </div>
+        <h2 class="section-title">
+          Battle-tested <span class="serif-italic">technologies</span>. Zero bloat.
+        </h2>
+        <p class="section-lead">
+          Carefully curated engineering stack designed for maximum execution speed, maintainable architecture, and longevity.
+        </p>
+
+        <div class="stack-grid">
+          
+          <!-- Category 1: Frontend Architecture -->
+          <div class="stack-column">
+            <div class="stack-column-header">
+              <span class="col-num">01</span>
+              <h3 class="col-title">Frontend Architecture</h3>
+            </div>
+            <ul class="tech-list">
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">Semantic HTML5 & DOM API</span>
+                  <span class="tech-badge">Foundation</span>
+                </div>
+                <p class="tech-desc">Accessible landmark structuring, ARIA roles, clean SEO metadata hierarchy.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">Modern Vanilla CSS & PostCSS</span>
+                  <span class="tech-badge">Styling</span>
+                </div>
+                <p class="tech-desc">CSS Grid, Subgrid, Custom Properties, container queries, and fluid typography without framework drag.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">React 19 & Next.js 15</span>
+                  <span class="tech-badge">Framework</span>
+                </div>
+                <p class="tech-desc">Server Components, Streaming SSR, optimistic UI, and zero-bundle-size client islands.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">TypeScript (Strict Mode)</span>
+                  <span class="tech-badge">Type Safety</span>
+                </div>
+                <p class="tech-desc">End-to-end typed contracts, inference, discriminated unions, zero 'any' policy.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Backend & Systems -->
+          <div class="stack-column">
+            <div class="stack-column-header">
+              <span class="col-num">02</span>
+              <h3 class="col-title">Backend & Systems</h3>
+            </div>
+            <ul class="tech-list">
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">Node.js & Express / Fastify</span>
+                  <span class="tech-badge">Runtime</span>
+                </div>
+                <p class="tech-desc">Event-driven asynchronous services, streaming response pipes, secure middleware chains.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">PostgreSQL & Prisma / Drizzle</span>
+                  <span class="tech-badge">Data Layer</span>
+                </div>
+                <p class="tech-desc">Relational modeling, indexed queries, connection pooling, and atomic transactional migrations.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">RESTful & GraphQL APIs</span>
+                  <span class="tech-badge">Integration</span>
+                </div>
+                <p class="tech-desc">Clean contract design, rate-limiting, OpenAPI specs, and sub-40ms execution response.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">Redis & Memory Caching</span>
+                  <span class="tech-badge">Performance</span>
+                </div>
+                <p class="tech-desc">Sub-millisecond session state, distributed locking, pub/sub for real-time multiplayer sockets.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Performance & Delivery -->
+          <div class="stack-column">
+            <div class="stack-column-header">
+              <span class="col-num">03</span>
+              <h3 class="col-title">Performance & Tooling</h3>
+            </div>
+            <ul class="tech-list">
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">Core Web Vitals Engineering</span>
+                  <span class="tech-badge">Optimization</span>
+                </div>
+                <p class="tech-desc">Zero Cumulative Layout Shift (CLS), sub-100ms LCP, and aggressive image decoding.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">Vite, Rollup & Turbopack</span>
+                  <span class="tech-badge">Bundler</span>
+                </div>
+                <p class="tech-desc">Dead code elimination, dynamic code-splitting, tree-shaking, and instant HMR dev loops.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">Docker & Edge Deployments</span>
+                  <span class="tech-badge">DevOps</span>
+                </div>
+                <p class="tech-desc">Reproducible container builds, Vercel/Cloudflare Workers edge caching, zero downtime rollouts.</p>
+              </li>
+              <li class="tech-item">
+                <div class="tech-item-main">
+                  <span class="tech-name">Playwright & Unit Testing</span>
+                  <span class="tech-badge">Reliability</span>
+                </div>
+                <p class="tech-desc">Automated regression suites, cross-browser compatibility checks, and CI validation pipelines.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES / WHAT RISHABH BUILDS -->
+    <section class="services-section" id="services">
+      <div class="services-container container">
+        <div class="section-badge">
+          <span class="badge-dot"></span>
+          <span>What I Build</span>
+        </div>
+        <h2 class="section-title">
+          Web development services <span class="serif-italic">built to scale</span>.
+        </h2>
+
+        <div class="services-grid">
+          
+          <div class="service-card">
+            <span class="service-number">01</span>
+            <h3 class="service-name">Bespoke Brand & Flagship Websites</h3>
+            <p class="service-desc">
+              Custom-crafted web experiences that elevate your brand narrative. Designed with luxury typography, smooth responsive layouts, and zero-jank scroll transitions.
+            </p>
+            <ul class="service-bullets">
+              <li>Editorial & Luxury Agency Portfolios</li>
+              <li>High-Conversion Product Landing Pages</li>
+              <li>Custom CSS animations & micro-interactions</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">02</span>
+            <h3 class="service-name">Full-Stack Web Applications</h3>
+            <p class="service-desc">
+              Robust, high-throughput web apps built with modern React, Next.js, and Node.js. Clean architecture designed to handle thousands of concurrent users reliably.
+            </p>
+            <ul class="service-bullets">
+              <li>SaaS Dashboards & Analytics Platforms</li>
+              <li>Multi-tenant Authentication & Role Management</li>
+              <li>PostgreSQL database schema & ORM integration</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">03</span>
+            <h3 class="service-name">Speed Audit & Core Web Vitals</h3>
+            <p class="service-desc">
+              Deep diagnostic profiling of slow, lagging websites. Remediation of memory leaks, layout shifts, uncompressed assets, and slow database calls to achieve 98+ PageSpeed.
+            </p>
+            <ul class="service-bullets">
+              <li>LCP, FID/INP, and CLS performance tuning</li>
+              <li>Asset optimization & next-gen formats</li>
+              <li>Edge caching & CDN distribution setup</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <span class="service-number">04</span>
+            <h3 class="service-name">Design Systems & Component Engines</h3>
+            <p class="service-desc">
+              Scalable, tokenized UI component architectures. Built with strict TypeScript typings, comprehensive accessible states, and documentation for engineering teams.
+            </p>
+            <ul class="service-bullets">
+              <li>Design Tokens (Colors, Typography, Spacers)</li>
+              <li>Accessible, Keyboard-Navigable Components</li>
+              <li>Custom Theme Engines & Dark Mode Logic</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DEVELOPMENT PROCESS -->
+    <section class="process-section" id="process">
+      <div class="process-container container">
+        <div class="section-badge">
+          <span class="badge-dot"></span>
+          <span>Methodology</span>
+        </div>
+        <h2 class="section-title">
+          How we go from <span class="serif-italic">concept</span> to code.
+        </h2>
+
+        <div class="process-steps-grid">
+          <div class="process-step">
+            <div class="step-num">Step 01</div>
+            <h3 class="step-title">Architecture & System Blueprint</h3>
+            <p class="step-desc">
+              We define technical specifications, state models, data flow, responsive breakpoints, and performance budgets before writing code.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">Step 02</div>
+            <h3 class="step-title">Handcrafted Engineering</h3>
+            <p class="step-desc">
+              Precision coding with semantic HTML5, pure CSS layout math, and strict TypeScript logic. Every interaction is tested at 60fps.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">Step 03</div>
+            <h3 class="step-title">Performance & QA Hardening</h3>
+            <p class="step-desc">
+              Extensive testing across mobile, tablet, and ultra-wide viewports. Core Web Vitals audits, accessibility validation, and cross-browser checks.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="step-num">Step 04</div>
+            <h3 class="step-title">Production Launch & Monitoring</h3>
+            <p class="step-desc">
+              Seamless zero-downtime deployment to edge networks with SSL, CDN caching, DNS configuration, and performance monitoring.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & LET'S CONNECT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <div class="pill-badge">
+              <span class="badge-dot"></span>
+              <span>Initiate Collaboration</span>
+            </div>
+            <h2 class="contact-title">
+              Let's create something <span class="serif-italic">extraordinary</span> together.
+            </h2>
+            <p class="contact-subtitle">
+              Have an ambitious web project or need a high-caliber web developer to build your digital flagship? Reach out directly.
+            </p>
+          </div>
+
+          <div class="contact-content-grid">
+            <!-- Left Info -->
+            <div class="contact-info-col">
+              <div class="direct-contact-item">
+                <span class="contact-label">Direct Email</span>
+                <div class="email-copy-wrap">
+                  <a href="mailto:rishabh.dev.craft@gmail.com" class="contact-value" id="emailText">rishabh.dev.craft@gmail.com</a>
+                  <button class="btn-copy-email" id="copyEmailBtn" title="Copy to clipboard">
+                    <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor">
+                      <rect x="5" y="5" width="8" height="8" rx="1.5" stroke-width="1.5"/>
+                      <path d="M3 11V3.5C3 3.2 3.2 3 3.5 3H11" stroke-width="1.5"/>
+                    </svg>
+                    <span id="copyBtnText">Copy</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="direct-contact-item">
+                <span class="contact-label">Location & Time</span>
+                <div class="contact-value-group">
+                  <span>New Delhi, India</span>
+                  <div class="live-clock-pill">
+                    <span class="clock-dot"></span>
+                    <span id="liveClockDisplay">10:18 PM IST</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="direct-contact-item">
+                <span class="contact-label">Social & Repositories</span>
+                <div class="social-links-list">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <span>GitHub</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <span>LinkedIn</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <span>Twitter / X</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                  <a href="https://readcv.com" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <span>ReadCV</span>
+                    <span class="arrow">&nearr;</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Contact Form -->
+            <div class="contact-form-col">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="userName" class="field-label">Your Name</label>
+                    <input type="text" id="userName" name="name" class="field-input" placeholder="e.g. Alex Morgan" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="userEmail" class="field-label">Your Email</label>
+                    <input type="email" id="userEmail" name="email" class="field-input" placeholder="alex@company.com" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectType" class="field-label">Project Scope</label>
+                  <select id="projectType" name="projectType" class="field-input field-select">
+                    <option value="bespoke-website">Bespoke Flagship Website</option>
+                    <option value="fullstack-app">Full-Stack Web Application</option>
+                    <option value="performance-audit">Performance & Core Web Vitals Audit</option>
+                    <option value="contract-engineering">Senior Frontend Contract / Retainer</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="userMessage" class="field-label">Tell me about the project</label>
+                  <textarea id="userMessage" name="message" class="field-input field-textarea" rows="4" placeholder="Briefly describe your goals, timeline, and requirements..." required></textarea>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn-pill btn-white submit-btn" id="submitBtn">
+                    <span>Send Message</span>
+                    <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor">
+                      <path d="M2 8H14M14 8L8 2M14 8L8 14" stroke-width="2"/>
+                    </svg>
+                  </button>
+                  <div class="form-feedback" id="formFeedback" role="status"></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container container">
+      <div class="footer-top-row">
+        <a href="#hero" class="brand-logo footer-logo">
+          <svg class="brand-symbol" viewBox="0 0 28 28" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L14 24L24 4H18.5L14 15.5L9.5 4H4Z" fill="currentColor"/>
+            <path d="M14 17L16.8 23H11.2L14 17Z" fill="#0066cc"/>
+          </svg>
+          <span class="brand-name">Rishabh</span>
+        </a>
+
+        <div class="footer-nav">
+          <a href="#hero">Home</a>
+          <a href="#studio">Studio Canvas</a>
+          <a href="#works">Works</a>
+          <a href="#services">Services</a>
+          <a href="#stack">Tech Stack</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+          <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor">
+            <path d="M8 13V3M8 3L3 8M8 3L13 8" stroke-width="2"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-copyright">
+          &copy; <span id="currentYear">2026</span> Rishabh. Handcrafted with semantic HTML, vanilla CSS & zero AI slop.
+        </div>
+        <div class="footer-status">
+          <span class="status-indicator"></span>
+          <span>All systems operational &bull; Sub-100ms TTFB</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS FOR CASE STUDIES -->
+  <!-- Tigre Tigre Modal -->
+  <div class="modal-backdrop" id="modal-tigre" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-badge">Case Study &bull; Full-Stack Flagship</span>
+          <h3 class="modal-title">Tigre Tigre &mdash; Modern Culinary & Sake Platform</h3>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project-tigre.jpg" alt="Tigre Tigre Preview" class="modal-preview-img" />
+          <div class="modal-meta-grid">
+            <div class="meta-box">
+              <span class="meta-label">Role</span>
+              <span class="meta-val">Lead Web Developer</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Architecture</span>
+              <span class="meta-val">Next.js 15, Custom Vanilla CSS</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Performance</span>
+              <span class="meta-val">99 Lighthouse, 72ms LCP</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">State & Data</span>
+              <span class="meta-val">Headless API & Edge Cache</span>
+            </div>
+          </div>
+          <div class="modal-text-block">
+            <h4>Engineering Highlights:</h4>
+            <p>
+              Engineered from scratch without utility framework lock-in. Designed using high-performance CSS Grid and container queries to deliver a buttery-smooth desktop editorial layout that seamlessly collapses into an intuitive mobile dining menu.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nexus Modal -->
+  <div class="modal-backdrop" id="modal-nexus" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-badge">Case Study &bull; Cloud Observability</span>
+          <h3 class="modal-title">Nexus Aether &mdash; High-Concurrency Observability</h3>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project-nexus.jpg" alt="Nexus Preview" class="modal-preview-img" />
+          <div class="modal-meta-grid">
+            <div class="meta-box">
+              <span class="meta-label">Role</span>
+              <span class="meta-val">Full-Stack Architect</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Architecture</span>
+              <span class="meta-val">React 19, WebSockets, Node.js</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Data Volume</span>
+              <span class="meta-val">45,200 requests/minute</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Latency</span>
+              <span class="meta-val">38ms average round-trip</span>
+            </div>
+          </div>
+          <div class="modal-text-block">
+            <h4>Engineering Highlights:</h4>
+            <p>
+              Developed a specialized canvas-based chart render engine to display live latency and throughput telemetry at 60 FPS without garbage collection spikes or memory leaks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Elements Modal -->
+  <div class="modal-backdrop" id="modal-elements" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-badge">Case Study &bull; Architectural Collective</span>
+          <h3 class="modal-title">Elements Collective &mdash; Architectural Digital Space</h3>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project-elements.jpg" alt="Elements Preview" class="modal-preview-img" />
+          <div class="modal-meta-grid">
+            <div class="meta-box">
+              <span class="meta-label">Role</span>
+              <span class="meta-val">Frontend Engineer</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Tech Stack</span>
+              <span class="meta-val">Next.js, TypeScript, WebGL</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Aesthetic</span>
+              <span class="meta-val">Editorial Monochrome</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Lighthouse</span>
+              <span class="meta-val">100 / 100 / 100 / 100</span>
+            </div>
+          </div>
+          <div class="modal-text-block">
+            <h4>Engineering Highlights:</h4>
+            <p>
+              Combines avant-garde typography with hardware-accelerated shaders and smooth momentum scrolling. Perfect zero Cumulative Layout Shift score achieved through strict aspect-ratio containers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Aktiv Fitness Modal -->
+  <div class="modal-backdrop" id="modal-aktiv" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-badge" style="color: #ff6b2b;">Live Client Flagship &bull; Commercial Web Platform</span>
+          <h3 class="modal-title">Aktiv Fitness &mdash; Delhi's Highest-Rated Gym</h3>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project-aktiv.jpg" alt="Aktiv Fitness Platform Preview" class="modal-preview-img" />
+          <div class="modal-meta-grid">
+            <div class="meta-box">
+              <span class="meta-label">Client &amp; Location</span>
+              <span class="meta-val">Aktiv Fitness &bull; Dev Nagar, Karol Bagh, New Delhi</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Live Deployment</span>
+              <span class="meta-val"><a href="https://aktiv-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" class="modal-link-highlight">aktiv-fitness.vercel.app &nearr;</a></span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Reputation &amp; Social Proof</span>
+              <span class="meta-val">4.9 / 5.0 Google Rating &bull; 500+ Active Members</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Core Performance</span>
+              <span class="meta-val">99 Lighthouse &bull; 65ms TTFB on Vercel Edge</span>
+            </div>
+          </div>
+          <div class="modal-text-block">
+            <h4>Engineering &amp; Architectural Highlights:</h4>
+            <p>
+              Handcrafted for Delhi's highest-rated fitness destination. The website eliminates framework overhead in favor of ultra-fast semantic HTML5, high-contrast athletic typography (Bebas Neue &amp; Inter), and modular CSS custom properties tuned for an energetic dark mode aesthetic.
+            </p>
+            <p style="margin-top: 10px;">
+              Features include localized SEO schema (LocalBusiness JSON-LD) for Karol Bagh search visibility, zero-friction direct-dial phone links (tel:+918448902171), live Google Maps location routing, dynamic operating hours display, and verified Google member testimonial cards.
+            </p>
+            <div class="modal-actions-bar">
+              <a href="https://aktiv-fitness.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-pill btn-white">
+                <span>Visit Live Website</span>
+                <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor">
+                  <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                </svg>
+              </a>
+              <button class="btn-pill btn-outline btn-canvas-load" data-load-project="aktiv" onclick="document.getElementById('modal-aktiv').classList.remove('open'); document.body.style.overflow = '';">
+                <span>Load in Studio Canvas &uarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Jayna Dental World Modal -->
+  <div class="modal-backdrop" id="modal-jayna" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-badge" style="color: #00e5be;">Live Client Flagship &bull; Healthcare &amp; Orthodontics</span>
+          <h3 class="modal-title">Jayna Dental World &mdash; Connaught Place Heritage Practice</h3>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project-jayna.jpg" alt="Jayna Dental World Preview" class="modal-preview-img" />
+          <div class="modal-meta-grid">
+            <div class="meta-box">
+              <span class="meta-label">Location &amp; Heritage</span>
+              <span class="meta-val">M-75 Connaught Place, New Delhi &bull; Est. 1910</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Live Deployment</span>
+              <span class="meta-val"><a href="projects/jayna-dental/index.html" target="_blank" rel="noopener noreferrer" class="modal-link-highlight">projects/jayna-dental &nearr;</a></span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Google Maps Proof</span>
+              <span class="meta-val"><a href="https://maps.app.goo.gl/6FN9MGEspZS1TWgF9?g_st=ac" target="_blank" rel="noopener noreferrer" style="color: #dfb15b;">4.9★ (1,250+ Reviews) on Google Maps &nearr;</a></span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Clinical Core</span>
+              <span class="meta-val">Invisalign Aligners, 3D Implants, Micro-Endodontics</span>
+            </div>
+          </div>
+          <div class="modal-text-block">
+            <h4>Engineering &amp; Architectural Highlights:</h4>
+            <p>
+              Bespoke digital platform built for Central Delhi’s premier 115-year dental dynasty in Connaught Place. Engineered with deep royal sapphire aesthetics, custom gold luxury accents, and high-performance vanilla CSS without heavy UI framework bloat.
+            </p>
+            <p style="margin-top: 10px;">
+              Key modules include an interactive priority appointment engine with automated date/slot validation, before/after orthodontic smile gallery, verified Google Reviews badge, full LocalBusiness JSON-LD schema, and direct-action Google Maps navigation routing.
+            </p>
+            <div class="modal-actions-bar">
+              <a href="projects/jayna-dental/index.html" target="_blank" rel="noopener noreferrer" class="btn-pill btn-white">
+                <span>Visit Live Website</span>
+                <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor">
+                  <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                </svg>
+              </a>
+              <a href="https://maps.app.goo.gl/6FN9MGEspZS1TWgF9?g_st=ac" target="_blank" rel="noopener noreferrer" class="btn-pill btn-outline" style="border-color: rgba(223, 177, 91, 0.4); color: #dfb15b;">
+                <span>View Google Maps Listing &nearr;</span>
+              </a>
+              <button class="btn-pill btn-outline btn-canvas-load" data-load-project="jayna" onclick="document.getElementById('modal-jayna').classList.remove('open'); document.body.style.overflow = '';">
+                <span>Load in Studio Canvas &uarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chawla Dental Clinic & Surgical Center Modal -->
+  <div class="modal-backdrop" id="modal-chawla" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-badge" style="color: #00d2c4;">Live Client Flagship &bull; Oral Surgery &amp; Implant Center</span>
+          <h3 class="modal-title">Chawla Dental &mdash; Oral &amp; Maxillofacial Surgery Center</h3>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project-chawla.jpg" alt="Chawla Dental Clinic Preview" class="modal-preview-img" />
+          <div class="modal-meta-grid">
+            <div class="meta-box">
+              <span class="meta-label">Lead Surgeon</span>
+              <span class="meta-val">Dr. Ramandeep Singh Chawla (BDS, MDS Oral Surgery)</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Location &amp; Landmark</span>
+              <span class="meta-val">C4F/270 Janakpuri, New Delhi &bull; Near Bharti College</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Google Rating</span>
+              <span class="meta-val"><a href="https://maps.app.goo.gl/DpQEvfpkyavZTrdm9" target="_blank" rel="noopener noreferrer" style="color: #00d2c4;">5.0 / 5.0★ (400+ Reviews) on Google Maps &nearr;</a></span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Key Specialties</span>
+              <span class="meta-val">15-Min Wisdom Tooth Protocol, Immediate Implants, OPG</span>
+            </div>
+          </div>
+          <div class="modal-text-block">
+            <h4>Engineering &amp; Architectural Highlights:</h4>
+            <p>
+              Engineered for Dr. Ramandeep Singh Chawla’s super-specialized surgical clinic in Janakpuri. Designed with a clinical cyan-slate design language reflecting sterile hospital-grade protocols, surgical precision, and patient empathy.
+            </p>
+            <p style="margin-top: 10px;">
+              Equipped with urgent surgical triage booking, step-by-step 15-minute wisdom tooth extraction guide, Class-B sterilization protocol explainer, digital OPG radiology showcase, and instant WhatsApp/telephony booking dispatch.
+            </p>
+            <div class="modal-actions-bar">
+              <a href="projects/chawla-dental/index.html" target="_blank" rel="noopener noreferrer" class="btn-pill btn-white">
+                <span>Visit Live Website</span>
+                <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor">
+                  <path d="M4 12L12 4M12 4H6M12 4V10" stroke-width="2"/>
+                </svg>
+              </a>
+              <a href="https://maps.app.goo.gl/DpQEvfpkyavZTrdm9" target="_blank" rel="noopener noreferrer" class="btn-pill btn-outline" style="border-color: rgba(0, 210, 196, 0.4); color: #00d2c4;">
+                <span>View Google Maps Listing &nearr;</span>
+              </a>
+              <button class="btn-pill btn-outline btn-canvas-load" data-load-project="chawla" onclick="document.getElementById('modal-chawla').classList.remove('open'); document.body.style.overflow = '';">
+                <span>Load in Studio Canvas &uarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
